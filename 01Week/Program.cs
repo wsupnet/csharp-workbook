@@ -1,55 +1,62 @@
 ﻿using System;
+using System.Text;
 
-namespace _01Week
+namespace ConsoleApplication
 {
+
+    // enum FavoriteSportsTeam
+    // {
+    //     Spurs,
+    //     Rockets,
+    //     Lakers
+    // }
+
+
     class Program
     {
         static void Main(string[] args)
         {
 
-            // Declare out datatypes 
-            // int number1 = 0;
-            // int number2 = 0;
+            //We have created a new person
+            Person person = new Person();
 
-            //Ask user for the initial values 
-            //first value 
-            // Console.WriteLine("Please enter the first value");
-            // number1 = Convert.ToInt32(Console.ReadLine());
+            //Add the values of the properties that define that new person 
+            Console.WriteLine("Enter your first name");
+            person.firstName = Console.ReadLine();
 
-            // second value 
-            // Console.WriteLine("Please enter the second value");
-            // number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter your last name");
+            person.lastName = Console.ReadLine();
+
+            Console.WriteLine("Enter your favorite sports team");
+            person.favoriteTeam = Console.ReadLine();
+
+            Console.WriteLine("Enter your ethnicity");
+            person.ethnicity = Console.ReadLine();
+
+            Console.WriteLine("Enter your gender");
+            person.gender = Console.ReadLine();
 
 
-            // // Calling Add function 
-            // Console.WriteLine(Add(number1, number2));
-
-            // // Calling the EnterName function 
-            // EnterName();
-            // Console.WriteLine(ConvertYardsToInches(number1));
-
-            string strFirstName, strLastName, strFavoriteTeam, strEthnicity;
-
-            Console.WriteLine("Enter first name: ");
-            strFirstName = Console.ReadLine();
-
-            Console.WriteLine("Enter last name: ");
-            strLastName = Console.ReadLine();
-
-            Console.WriteLine("Enter favorite sports team: ");
-            strFavoriteTeam = Console.ReadLine();
-
-            Console.WriteLine("Enter ethnicity: ");
-            strEthnicity = Console.ReadLine();
-
-            Console.WriteLine(DatingProfile(strFirstName, strLastName, strFavoriteTeam, strEthnicity));
+            Console.WriteLine(DatingProfile(person));
 
         }
-
-        public static string DatingProfile(string strFirstName, string strLastName, string strFavoriteTeam, string strEthnicity)
+        public static string DatingProfile(Person person)
         {
+            StringBuilder strDescription = new StringBuilder("{0} likes to hike in the outdoors. Favorite team is the {1}. Ethnicity is {2}. ");
+            // string strDescription = "{0} likes to hike in the outdoors. Favorite team is the {1}. Ethnicity is {2}. ";
 
-            return string.Format("{0} likes to hike in the outdoors. Her favorite team is the {1}. She's {2}", strFirstName, strFavoriteTeam, strEthnicity); 
+            if (person.favoriteTeam == "spurs")
+            {
+                strDescription.Append("GO SPURS GO");
+                // strDescription += "GO SPURS GO!";
+            }
+            else
+            {
+                strDescription.Append("Rockets Rock");
+                // strDescription += "ROCKETS ROCK!";
+            }
+
+            return string.Format(strDescription.ToString(), person.firstName, person.favoriteTeam, person.ethnicity);
         }
 
 
@@ -59,7 +66,7 @@ namespace _01Week
             return number1 + number2;
             // total = number1 + number2; 
             // Console.WriteLine("Your total is: " + total);
-            
+
         }
 
         public static double ConvertYardsToInches(int number1)
