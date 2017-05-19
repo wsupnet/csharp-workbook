@@ -1,0 +1,8 @@
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/bin/Debug/netcoreapp1.1/02Week.deps.json
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/bin/Debug/netcoreapp1.1/02Week.runtimeconfig.json
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/bin/Debug/netcoreapp1.1/02Week.runtimeconfig.dev.json
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/obj/Debug/netcoreapp1.1/02Week.AssemblyInfo.cs
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/bin/Debug/netcoreapp1.1/02Week.dll
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/bin/Debug/netcoreapp1.1/02Week.pdb
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/obj/Debug/netcoreapp1.1/02Week.dll
+/Users/wesleys/Desktop/SACA-intermediate/csharp-workbook/02Week/obj/Debug/netcoreapp1.1/02Week.pdb
