@@ -18,24 +18,24 @@ namespace ConsoleApplication
             word = word.ToLower();
             int vowelIndex = word.IndexOf("a");
 
-            if ( (word.IndexOf("e") > -1) && (word.IndexOf("e") < vowelIndex) || (vowelIndex == -1) ) 
+            if ((word.IndexOf("e") > -1) && (word.IndexOf("e") < vowelIndex) || (vowelIndex == -1))
             {
                 vowelIndex = word.IndexOf("e");
             }
 
-            if ( (word.IndexOf("i") > -1 && word.IndexOf('i') < vowelIndex) || (vowelIndex == -1) ) 
+            if ((word.IndexOf("i") > -1 && word.IndexOf('i') < vowelIndex) || (vowelIndex == -1))
             {
-                vowelIndex = word.IndexOf('i'); 
+                vowelIndex = word.IndexOf('i');
             }
 
-            if ( (word.IndexOf("o") > -1 && word.IndexOf('o') < vowelIndex) || (vowelIndex == -1) )  
+            if ((word.IndexOf("o") > -1 && word.IndexOf('o') < vowelIndex) || (vowelIndex == -1))
             {
-                vowelIndex = word.IndexOf('o'); 
+                vowelIndex = word.IndexOf('o');
             }
 
-            if ( (word.IndexOf("u") > -1 && word.IndexOf('u') < vowelIndex) || (vowelIndex == -1) )  
+            if ((word.IndexOf("u") > -1 && word.IndexOf('u') < vowelIndex) || (vowelIndex == -1))
             {
-                vowelIndex = word.IndexOf('u'); 
+                vowelIndex = word.IndexOf('u');
             }
 
             string firstPart = word.Substring(0, vowelIndex);
@@ -43,7 +43,7 @@ namespace ConsoleApplication
 
             Console.WriteLine("vowelIndex: " + vowelIndex);
             Console.WriteLine("firstPart: " + firstPart);
-            Console.WriteLine("restWord: " + restWord)
+            Console.WriteLine("restWord: " + restWord);
             Console.WriteLine(vowelIndex);
 
             return "Pig Latin Word: " + restWord + firstPart + "ay";
